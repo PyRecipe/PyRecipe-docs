@@ -1,0 +1,2 @@
+* [Giriş](/)
+* [Kurulum](installation.md)

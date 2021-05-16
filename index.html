@@ -7,15 +7,21 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <script src="//cdn.jsdelivr.net/npm/docsify-edit-on-github"></script>
 </head>
 <body>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: '',
-      repo: '',
+      name: 'PyRecipe',
+      repo: 'https://github.com/PyRecipe/PyRecipe',
       loadNavbar: true,
-      coverpage: true
+      loadSidebar: true,
+      subMaxLevel: 2,
+      coverpage: true,
+      plugins: [
+        EditOnGithubPlugin.create('https://github.com/PyRecipe/PyRecipe-docs/')
+      ]
     }
   </script>
   <!-- Docsify v4 -->
